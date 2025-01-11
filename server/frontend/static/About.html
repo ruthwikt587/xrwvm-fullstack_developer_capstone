@@ -1,9 +1,61 @@
+<!DOCTYPE html>
 <html>
 <head>
+  <title>About Us - Best Cars Dealership</title>
   <!-- Link the style sheet here -->
+  <link rel="stylesheet" href="/static/style.css">
+  <link rel="stylesheet" href="/static/bootstrap.min.css">
+  <style>
+    .navbar {
+      background-color: darkturquoise;
+      height: 1in;
+    }
+
+    .banner {
+      text-align: center;
+      padding: 20px;
+      background-color: lightgray;
+      margin-bottom: 20px;
+    }
+
+    .card {
+      margin: 15px;
+      text-align: center;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .card img {
+      border-radius: 8px 8px 0 0;
+    }
+
+    .card .card-body {
+      padding: 15px;
+    }
+
+    .card .title {
+      font-weight: bold;
+      font-size: 1.2em;
+      color: #333;
+    }
+
+    .card p {
+      margin: 5px 0;
+      color: #555;
+    }
+
+    .team-section {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+  </style>
 </head>
+<body>
 <div>
-  <nav class="navbar navbar-expand-lg navbar-light" style="background-color:darkturquoise; height: 1in;">
+  <nav class="navbar navbar-expand-lg navbar-light">
     <div class="container-fluid">
       <h2 style="padding-right: 5%;">Dealerships</h2>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
@@ -24,45 +76,45 @@
       </div>
     </div>
   </nav>
-  
-    <div class="card" style="width: 80%;margin: auto; margin-top:5%;">
-      <div class="banner" name="about-header">
-      <!-- Insert header information here -->
-      </div>
-      <div style="display: flex;flex-direction: row; margin:auto">
+
+  <div class="card" style="width: 80%;margin: auto; margin-top:5%;">
+    <div class="banner" name="about-header">
+      <h1>About Us</h1>
+      <p>Welcome to Best Cars Dealership, where your journey to owning the perfect car begins. We specialize in offering a wide range of domestic and imported cars at competitive prices, ensuring our customers always drive away satisfied.</p>
+    </div>
+    <div class="team-section">
       <div class="card" style="width: 30%;">
-        <img class="card-img-top" src="/static/person.png" alt="Card image">
+        <img class="card-img-top" src="/static/alice.jpg" alt="John Doe">
         <div class="card-body">
-          <p class="title">Person1</p>
-          <p>Person1 Title</p>
-          <p class="card-text">Some text that explains the person1 in about 2 short sentences</p>
-          <p>person1@example.com</p>
+          <p class="title">John Doe</p>
+          <p>CEO & Founder</p>
+          <p class="card-text">John has over 20 years of experience in the automotive industry. He is passionate about providing exceptional service and the best deals to our customers.</p>
+          <p>john.doe@example.com</p>
         </div>
       </div>
 
       <div class="card" style="width: 30%;">
-        <img class="card-img-top" src="/static/person.png" alt="Card image">
+        <img class="card-img-top" src="/static/bob.jpg" alt="Jane Smith">
         <div class="card-body">
-          <p class="title">Person2</p>
-          <p>Person2 Title</p>
-          <p class="card-text">Some text that explains the person2 in about 2 short sentences</p>
-          <p>person2@example.com</p>
+          <p class="title">Jane Smith</p>
+          <p>Sales Manager</p>
+          <p class="card-text">Jane is an expert in customer relations and leads our sales team with a focus on personalized service and customer satisfaction.</p>
+          <p>jane.smith@example.com</p>
         </div>
       </div>
 
       <div class="card" style="width: 30%;">
-        <img class="card-img-top" src="/static/person.png" alt="Card image">
+        <img class="card-img-top" src="/static/jaggu.jpg" alt="Michael Brown">
         <div class="card-body">
-          <p class="title">Person3</p>
-          <p>Person3 Title</p>
-          <p class="card-text">Some text that explains the person3 in about 2 short sentences</p>
-          <p>person3@example.com</p>
+          <p class="title">Michael Brown</p>
+          <p>Technical Director</p>
+          <p class="card-text">With a strong background in engineering, Michael ensures all vehicles meet the highest technical standards before they reach our customers.</p>
+          <p>michael.brown@example.com</p>
         </div>
       </div>
     </div>
-    </div>
-    </div>
-    
+  </div>
 </div>
 
+</body>
 </html>
